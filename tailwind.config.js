@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        'heading-1': ['clamp(2.5rem, 6.5vw, 10rem)'],
+        'heading-1': ['clamp(2.7rem, 6.5vw, 10rem)'],
         'heading-2': ['clamp(2.4rem, 8vw, 10rem)'],
         'heading-3': ['clamp(2rem, 5vw, 2.75rem)'],
         'works-title': ['clamp(1.25rem, 2vw, 1.5rem)'],
@@ -27,7 +27,7 @@ export default {
         'big-nums': '#666666',
         'black-body-font': '#333333',
         'black-bg': '#2B2B2B',
-        'buttons-display-font': '#DE595F',
+        'buttons-bg': '#393632',
         'secondary-500': '#AEAE9D',
         'secondary-600': '#8C8C73',
         'secondary-700': '#70705C',
