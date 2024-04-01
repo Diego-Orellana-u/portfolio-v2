@@ -3,7 +3,7 @@ import graybg from '../assets/logos/gray-bg.png';
 export default function IndProject() {
   return (
     <div className="flex flex-col gap-y-7 pb-14">
-      <img src={graybg} className="h-[15rem]" />
+      <img src={graybg} className="h-[15rem] object-cover" />
 
       <div className="text-white-body-font">
         <div className="pb-4">
