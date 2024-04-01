@@ -1,6 +1,7 @@
 import AboutMe from './components/AboutMe';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
+import Workflow from './components/Workflow';
 import Header from './ui/Header';
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
       <Hero />
       <Projects />
       <AboutMe />
+      <Workflow />
     </div>
   );
 }

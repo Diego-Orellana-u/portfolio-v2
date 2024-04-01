@@ -50,11 +50,11 @@ export default function AboutMe() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-7">
+      <div className="flex flex-col gap-7 pb-10">
         <img src={graybg} className="h-[20rem] object-cover rounded-md" />
         <div>
-          <h3 className="text-heading-3 font-semibold w-64 mb-7">My Skills</h3>
-          <div className="flex flex-col gap-[4.5rem]">
+          <h3 className="text-heading-3 font-semibold mb-7">My Skills</h3>
+          <div className="flex flex-col gap-[4.5rem] pb-10">
             {skills.map((row, index) => (
               <SkillRow
                 key={`${skillId} - ${index}`}
@@ -65,6 +65,9 @@ export default function AboutMe() {
               />
             ))}
           </div>
+          <button className="bg-buttons-bg text-white-body-font py-3 px-5 rounded-3xl font-general font-light">
+            Get my resume
+          </button>
         </div>
       </div>
     </section>
