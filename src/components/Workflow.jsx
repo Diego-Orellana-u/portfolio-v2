@@ -4,8 +4,8 @@ export default function Workflow() {
       <h2 className="text-heading-3 font-semibold text-white-body-font pb-[2rem]">
         My Workflow
       </h2>
-      <div>
-        <div className="text-white-body-font flex flex-col gap-4">
+      <div className="flex">
+        <div className="text-white-body-font flex flex-col gap-4 mr-5">
           <div className="flex items-start">
             <span className="font-bold text-[1.3rem] text-big-nums tracking-[0.12em] w-[34px]">
               01.
@@ -60,7 +60,12 @@ export default function Workflow() {
             </p>
           </div>
         </div>
-        {/* barras en vertical */}
+        <div className="w-5 mr-6">
+          <div className="w-18px h-full radial"></div>
+        </div>
+        <div className="w-5">
+          <div className="w-18px h-full radial"></div>
+        </div>
       </div>
     </section>
   );
