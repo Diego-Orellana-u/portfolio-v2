@@ -1,4 +1,5 @@
 import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Workflow from './components/Workflow';
@@ -12,6 +13,7 @@ export default function App() {
       <Projects />
       <AboutMe />
       <Workflow />
+      <Contact />
     </div>
   );
 }

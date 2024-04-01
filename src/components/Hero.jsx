@@ -12,7 +12,7 @@ export default function Hero() {
         <img
           src={logo}
           alt="hero logo of Factorial"
-          className="w-[260px] h-[88px] ml-[3rem]"
+          className="w-[260px] h-[88px] ml-[1rem] min-[345px]:ml-[3rem]"
         />
         <h1 className="text-body-1 font-normal text-center mt-[5px]">
           SOFTWARE DEVELOPMENT \\

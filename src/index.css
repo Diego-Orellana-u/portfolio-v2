@@ -53,7 +53,9 @@
   h1,
   h2,
   h3,
-  h4 {
+  h4,
+  input,
+  button {
     @apply font-general;
   }
 
@@ -77,10 +79,10 @@
 
 .radial {
   background: radial-gradient(
-    50% 50% at -15%,
+    65% 50% at -6%,
     #d6ffee 5%,
-    #d5e987 57%,
-    #ff0000 24%,
+    #d5e987bd 37%,
+    #ff0000d9 66%,
     rgba(24, 24, 24, 0) 106%
   );
 }
