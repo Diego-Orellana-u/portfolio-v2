@@ -21,19 +21,19 @@ export default function Header() {
       <div className="text-body-1 self-center">
         <ul className="min-[1024px]:flex min-[1024px]:items-center min-[1024px]:gap-9">
           <li>
-            <a>Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a>About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a>Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li className="min-[1024px]:hidden">
-            <a>Contact</a>
+            <a href="#contact">Contact</a>
           </li>
-          <li className="max-[1024px]:hidden bg-buttons-bg text-white-body-font w-fit px-8 py-[0.3rem] rounded-3xl tracking-[.05em]">
-            <a>Let&apos;s Talk</a>
+          <li className="max-[1023px]:hidden bg-buttons-bg text-white-body-font w-fit px-8 py-[0.3rem] rounded-3xl tracking-[.05em]">
+            <a href="#contact">Let&apos;s Talk</a>
           </li>
         </ul>
       </div>

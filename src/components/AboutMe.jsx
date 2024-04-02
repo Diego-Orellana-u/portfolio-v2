@@ -26,7 +26,7 @@ let skills = [
 export default function AboutMe() {
   const skillId = useId();
   return (
-    <section className="px-[1.4rem]">
+    <section id="about" className="px-[1.4rem]">
       <h2 className="text-black-body-font heading-1">ABOUT ME</h2>
       <div className="flex flex-col gap-7">
         <img
@@ -58,7 +58,7 @@ export default function AboutMe() {
           src={graybg}
           className="w-screen max-w-full h-auto object-cover rounded-md"
         />
-        <div>
+        <div id="skills">
           <h3 className="text-heading-3 font-semibold mb-7">My Skills</h3>
           <div className="flex flex-col gap-[4.5rem] pb-10">
             {skills.map((row, index) => (

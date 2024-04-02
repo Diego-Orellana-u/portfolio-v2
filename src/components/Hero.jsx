@@ -7,7 +7,7 @@ export default function Hero() {
       id="hero"
       className="h-[calc(100vh-135px)] w-full select-none min-[1024px]:h-[calc(100vh-80px)]"
     >
-      <div className="text-[58px] min-[550px]:text-[108px] min-[1024px]:text-[128px] font-bold relative top-[15vh] min-[375px]:top-[4vh] min-[425px]:top-[7vh] px-[1.4rem] min-[550px]:top-[0] min-[1024px]:top-[-2vh]">
+      <div className="text-[58px] min-[550px]:text-[108px] min-[1024px]:text-[128px] font-bold relative top-[15vh] min-[375px]:top-[4vh] min-[425px]:top-[7vh] px-[1.4rem] min-[550px]:top-[0] min-[1024px]:top-[5vh]">
         <div className="flex flex-col items-center">
           <div>
             <span className="font-general text-transparent font-outline-3">

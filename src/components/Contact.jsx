@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section className="px-[1.4rem] py-8">
+    <section id="contact" className="px-[1.4rem] py-8">
       <div>
         <h2 className="text-black-body-font text-heading-3 font-bold pb-[2rem] text-center">
           Let&apos;s Connect

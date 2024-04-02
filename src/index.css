@@ -40,9 +40,6 @@
   }
 
   @media (min-width: 640px) {
-    * {
-      cursor: none;
-    }
   }
   a,
   p,
