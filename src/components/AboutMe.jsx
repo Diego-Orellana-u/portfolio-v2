@@ -29,7 +29,10 @@ export default function AboutMe() {
     <section className="px-[1.4rem]">
       <h2 className="text-black-body-font heading-1">ABOUT ME</h2>
       <div className="flex flex-col gap-7">
-        <img src={graybg} className="h-[20rem] object-cover rounded-md" />
+        <img
+          src={graybg}
+          className="w-full max-w-full h-auto object-cover rounded-md"
+        />
         <div className="flex flex-col gap-4 text-body-1 mb-12">
           <h3 className="text-heading-3 font-semibold w-64">
             A brief intro, who am I?
@@ -51,7 +54,10 @@ export default function AboutMe() {
       </div>
 
       <div className="flex flex-col gap-7 pb-10">
-        <img src={graybg} className="h-[20rem] object-cover rounded-md" />
+        <img
+          src={graybg}
+          className="w-screen max-w-full h-auto object-cover rounded-md"
+        />
         <div>
           <h3 className="text-heading-3 font-semibold mb-7">My Skills</h3>
           <div className="flex flex-col gap-[4.5rem] pb-10">

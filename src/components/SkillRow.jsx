@@ -1,7 +1,7 @@
 export default function SkillRow({ logo1, logo2, name1, name2 }) {
   return (
     <div className="flex font-medium">
-      <div className="flex items-center w-[150px] min-[350px]:w-[180px] gap-3">
+      <div className="flex items-center w-[150px] min-[350px]:w-[180px] min-[410px]:w-[60%] gap-3">
         {logo1 && (
           <img src={logo1} className="w-[28px]" alt={`Logo of ${name1}`} />
         )}

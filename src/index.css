@@ -79,11 +79,24 @@
 
 .radial {
   background: radial-gradient(
-    65% 50% at -6%,
+    48% 50% at -6%,
     #d6ffee 5%,
     #d5e987bd 37%,
     #ff0000d9 66%,
     rgba(24, 24, 24, 0) 106%
   );
 }
+
+@media (min-width: 535px) {
+  .radial {
+    background: radial-gradient(
+      39% 50% at -6%,
+      #d6ffee 5%,
+      #d5e987bd 37%,
+      #ff0000d9 66%,
+      rgba(24, 24, 24, 0) 106%
+    );
+  }
+}
+
 /* #943636 red */
