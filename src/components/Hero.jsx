@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="h-[calc(100vh-135px)] w-full select-none min-[1024px]:h-[calc(100vh-80px)]"
+      className="h-[calc(100vh-135px)] w-full select-none min-[1024px]:h-[calc(100vh-80px)] relative"
     >
       <div className="text-[58px] min-[550px]:text-[108px] min-[1024px]:text-[128px] font-bold relative top-[15vh] min-[375px]:top-[4vh] min-[425px]:top-[7vh] px-[1.4rem] min-[550px]:top-[0] min-[1024px]:top-[5vh]">
         <div className="flex flex-col items-center">
@@ -38,7 +38,7 @@ export default function Hero() {
           Scroll down to see more
         </span>
       </div>
-      <div className="absolute overflow-x-hidden max-w w-full top-[15vh] min-[550px]:top-[20vh] min-[650px]:top-[5vh] min-[750px]:top-[16vh] min-[1024px]:top-[18vh]">
+      <div className="absolute max-w w-full top-[-1vh] overflow-hidden">
         <img
           src={pattern}
           alt="vector pattern of the hero"

@@ -4,21 +4,21 @@ export default function IndProject() {
   return (
     <div className="min-[1024px]:border-y-[1px] min-[1024px]:border-primary-lines/30 min-[1024px]:py-[5rem] min-[1150px]:py-[8rem]">
       <div className="flex flex-col gap-y-7 pb-14 min-[1024px]:pb-0 px-[1.4rem] min-[1024px]:px-[6rem] min-[1024px]:flex-row">
-        <div>
+        <div className="flex-1">
           <img
             src={testimg}
             className="w-full max-w-full h-auto object-cover"
           />
         </div>
 
-        <div className="text-white-body-font flex flex-col relative">
+        <div className="text-white-body-font flex flex-col relative flex-1">
           <div className="pb-4 min-[1024px]:pl-14 min-[1124px]:pl-20 min-[1024px]:hidden">
             <div className="border border-white w-fit px-4 py-[0.25rem] rounded-3xl text-sm">
               <span>JavaScript</span>
             </div>
           </div>
           <div className="flex flex-col gap-y-3 min-[1024px]:pl-14 min-[1124px]:pl-20 min-[1024px]:pb-5">
-            <h3 className="text-heading-4 font-medium min-[1024px]:text-[4rem] min-[1024px]:font-semibold min-[1536px]:text-[4.5rem]">
+            <h3 className="text-heading-4 font-medium min-[1024px]:text-[3rem] min-[1248px]:text-[4rem] min-[1024px]:font-semibold min-[1536px]:text-[4.5rem]">
               PROJECT NAME
             </h3>
             <span className="font-thin min-[1536px]:text-2xl">
@@ -36,7 +36,7 @@ export default function IndProject() {
               </div>
             </div>
           </div>
-          <span className="bottom-[-14rem] flex w-full justify-end items-end max-[1023px]:hidden text-[256px] text-accent-100/20 font-bold absolute">
+          <span className="bottom-[-10rem] min-[1150px]:bottom-[-14rem] flex w-full justify-end items-end max-[1023px]:hidden min-[1024px]:text-[208px] min-[1150px]:text-[256px] text-accent-100/20 font-bold absolute">
             01.
           </span>
         </div>
