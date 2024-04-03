@@ -34,7 +34,7 @@ export default function Hero() {
             DIEGO.ORELLANA.GIT@GMAIL.COM
           </span>
         </div>
-        <span className="block text-body-1 font-medium text-center mt-8 min-[1024px]:mt-[0] min-[1024px]:font-normal">
+        <span className="block text-body-1 font-normal text-center mt-8 min-[1024px]:mt-[0]">
           Scroll down to see more
         </span>
       </div>
