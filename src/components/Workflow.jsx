@@ -13,7 +13,7 @@ const workflowArr = [
 export default function Workflow() {
   const pointId = useId();
   return (
-    <section className="bg-black-bg py-8 px-[1.4rem] min-[1024px]:px-[6rem] min-[615px]:py-16">
+    <section className="bg-black-bg py-8 px-[1.4rem] min-[1024px]:px-[6rem] min-[615px]:py-24">
       <h2 className="text-heading-3 font-semibold text-white-body-font pb-[2rem] min-[1024px]:text-[4rem] min-[1536px]:text-[5rem] s">
         My Workflow
       </h2>

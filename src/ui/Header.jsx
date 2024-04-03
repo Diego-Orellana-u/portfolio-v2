@@ -32,7 +32,7 @@ export default function Header() {
           <li className="min-[1024px]:hidden">
             <a href="#contact">Contact</a>
           </li>
-          <li className="max-[1023px]:hidden bg-buttons-bg text-white-body-font w-fit px-8 py-[0.3rem] rounded-3xl tracking-[.05em]">
+          <li className="max-[1023px]:hidden bg-buttons-bg text-white-body-font px-8 py-[0.3rem] rounded-3xl tracking-[.05em]">
             <a href="#contact">Let&apos;s Talk</a>
           </li>
         </ul>

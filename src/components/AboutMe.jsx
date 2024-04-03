@@ -27,7 +27,7 @@ export default function AboutMe() {
   const skillId = useId();
   return (
     <section id="about" className="px-[1.4rem] min-[1024px]:px-[6rem]">
-      <h2 className="text-black-body-font heading-1">ABOUT ME</h2>
+      <h2 className="text-secondary-600 heading-1">ABOUT ME</h2>
       <div className="flex flex-col gap-7 min-[1024px]:gap-16 min-[728px]:flex-row-reverse min-[768px]:pb-8">
         <div className="min-[728px]:flex-1">
           <img
