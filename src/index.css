@@ -98,4 +98,14 @@
   }
 }
 
+@media (min-height: 700px) {
+  .long-p {
+    padding-top: 20vh;
+  }
+
+  .long-top {
+    top: 240px;
+  }
+}
+
 /* #943636 red */

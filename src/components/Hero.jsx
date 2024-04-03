@@ -8,7 +8,7 @@ export default function Hero() {
       className="h-[calc(100vh-135px)] min-[1024px]:h-[calc(100vh-80px)]"
     >
       <div className="flex min-h-full justify-between flex-col text-[58px] min-[550px]:text-[108px] min-[1024px]:text-[128px] font-bold px-[1.4rem]">
-        <div className="flex flex-col items-center pt-16 min-[550px]:pt-[0] min-[1424px]:pt-[7vh]">
+        <div className="flex flex-col items-center pt-16 min-[550px]:pt-[0] min-[1424px]:pt-[7vh] long-p">
           <div>
             <span className="font-general text-transparent font-outline-3">
               HI
@@ -40,7 +40,7 @@ export default function Hero() {
           </span>
         </div>
       </div>
-      <div className="absolute w-full min-h-fit top-[190px] min-[1024px]:top-[100px] bottom-[30rem] min-[900px]:bottom-[32rem] min-[1024px]:bottom-[42rem] min-[1424px]:bottom-[43rem] overflow-hidden">
+      <div className="absolute w-full top-[190px] min-[1024px]:top-[100px] overflow-hidden long-top">
         <img
           src={pattern}
           alt="vector pattern of the hero"
