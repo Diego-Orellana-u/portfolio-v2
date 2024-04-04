@@ -2,12 +2,12 @@ import { useId } from 'react';
 import WorkflowPoint from '../ui/WorkflowPoint';
 
 const workflowArr = [
-  ['01.', 'Recopilation of ideas and requirements'],
-  ['02.', 'Recopilation of ideas and requirements'],
-  ['03.', 'Recopilation of ideas and requirements'],
-  ['04.', 'Recopilation of ideas and requirements'],
-  ['05.', 'Recopilation of ideas and requirements'],
-  ['06.', 'Recopilation of ideas and requirements'],
+  ['01.', 'PROJECT ANALYSIS'],
+  ['02.', 'ASK ABOUT DEADLINES AND CORE FEATURES'],
+  ['03.', 'CREATION OF DESIGN PROTOTYPES'],
+  ['04.', 'CODE. CODE. CODE.'],
+  ['05.', 'OPTIMIZATION AND TESTING'],
+  ['06.', 'DELIVER FINAL PRODUCT'],
 ];
 
 export default function Workflow() {

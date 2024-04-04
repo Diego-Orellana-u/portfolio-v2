@@ -8,7 +8,7 @@ export default function WorkflowPoint({ number, point }) {
       >
         {number}
       </span>
-      <p className="text-body-1 font-light pt-[3px] pl-3 min-[740px]:text-[1.5rem] min-[880px]:text-[2rem]">
+      <p className="text-[1rem] font-light pt-[3px] pl-3 min-[1024px]:pt-[8px] min-[740px]:text-[1.5rem]">
         {point}
       </p>
     </div>

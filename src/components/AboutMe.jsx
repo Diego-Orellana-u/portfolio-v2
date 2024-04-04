@@ -37,20 +37,23 @@ export default function AboutMe() {
         </div>
         <div className="pt-6 flex flex-col gap-6 min-[1024px]:gap-8 min-[1536px]:gap-12 text-body-1 mb-12 min-[728px]:flex-1 min-[1536px]:text-3xl">
           <h3 className="text-heading-3 font-semibold w-64 min-[728px]:w-auto min-[1024px]:text-[4rem] min-[1536px]:text-[5rem] leading-[4.5rem]">
-            A brief intro, who am I?
+            Who am I?
           </h3>
           <p>
-            I am an independent frontend developer, UI/UX designer and creator
-            based in Melbourne, Australia.
+            I am a full-stack software developer and UI/UX designer based in
+            Santiago, Chile, with more than 2 years of experience. My core
+            values are: discipline, hard work, integrity and personal growth.
           </p>
           <p>
-            I specialize in crafting elevated, intuitive, and minimalistic
-            designs for startups and small businesses to help them stand out in
-            the digital landscape with a powerful impact.{' '}
+            I specialize in crafting blazingly fast and elegant applications,
+            finding the right balance between usability and design. I have
+            experience leading teams and accomplishing objectives in a fast and
+            creative way.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            When I am not creating amazing projects, I like to exercise, read
+            fantasy/personal development books, play the guitar, or learn new
+            things on any topic!
           </p>
         </div>
       </div>

@@ -85,6 +85,9 @@
     rgba(24, 24, 24, 0) 106%
   );
 }
+.linear-gradient {
+  background: linear-gradient(#f8f8f2 66%, #333 220%);
+}
 
 @media (min-width: 535px) {
   .radial {
