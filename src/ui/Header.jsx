@@ -18,16 +18,25 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="text-body-1 self-center">
+      <nav className="text-body-1 self-center">
         <ul className="min-[1024px]:flex min-[1024px]:items-center min-[1024px]:gap-9">
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#skills" className="group relative hidden md:inline-block">
+              <span>Projects</span>
+              <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+            </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#skills" className="group relative hidden md:inline-block">
+              <span>About</span>
+              <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+            </a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills" className="group relative hidden md:inline-block">
+              <span>Skills</span>
+              <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+            </a>
           </li>
           <li className="min-[1024px]:hidden">
             <a href="#contact">Contact</a>
@@ -36,7 +45,7 @@ export default function Header() {
             <a href="#contact">Let&apos;s Talk</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
   );
 }
