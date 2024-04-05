@@ -12,13 +12,13 @@ export default function IndProject({ proyectInfo }) {
           <img
             src={proyectInfo[0]}
             className="w-full max-w-full h-auto object-cover min-[1024px]:hidden"
-            alt="image of project"
+            alt={`image of ${[proyectInfo[2]]}`}
           />
 
           <img
             src={proyectInfo[1]}
             className="w-full max-w-full h-auto object-cover max-[1023px]:hidden"
-            alt="image of project"
+            alt={`image of ${[proyectInfo[2]]}`}
           />
           <div className="flex justify-between text-secondary-800 pt-7 min-[1250px]:pt-10">
             <a

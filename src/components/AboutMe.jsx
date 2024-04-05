@@ -33,6 +33,7 @@ export default function AboutMe() {
           <img
             src={aboutTest}
             className="w-full max-w-full h-auto object-cover rounded-md"
+            alt="An image about me"
           />
         </div>
         <div className="pt-6 flex flex-col gap-6 min-[1024px]:gap-8 min-[1536px]:gap-12 text-body-1 mb-12 min-[728px]:flex-1 min-[1536px]:text-3xl">
@@ -63,6 +64,7 @@ export default function AboutMe() {
           <img
             src={aboutTest}
             className="w-screen max-w-full h-auto object-cover rounded-md"
+            alt="An image of me"
           />
         </div>
         <div id="skills" className="min-[728px]:flex-1 text-body-1 pt-6 ">

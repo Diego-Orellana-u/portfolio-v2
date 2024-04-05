@@ -1,6 +1,6 @@
 export const proyectsData = [
   [
-    '/img/project1-m.jpg',
+    '/img/project1-m.webp',
     '/img/project1.webp',
     'LETELIER - ECOMMERCE',
     'FRONTEND DEVELOPER • DESIGN',

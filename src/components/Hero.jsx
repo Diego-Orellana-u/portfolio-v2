@@ -1,4 +1,4 @@
-import logo from '../assets/logos/heroLogo.svg';
+import logo from '../assets/logos/factorial-logo.svg';
 import pattern from '../assets/logos/pattern.svg';
 
 export default function Hero() {
@@ -19,7 +19,7 @@ export default function Hero() {
             <img
               src={logo}
               alt="hero logo of Factorial"
-              className="w-[260px] h-[88px] min-[550px]:w-[430px] min-[550px]:h-[143px] min-[1024px]:w-[736px] min-[1024px]:h-[213px] ml-[1rem] min-[345px]:ml-[3rem]"
+              className="w-[260px] h-[88px] min-[550px]:w-[430px] min-[550px]:h-[143px] min-[1024px]:w-[736px] min-[1024px]:h-[213px] ml-[1rem] min-[345px]:ml-[3rem] "
             />
             <h1 className="text-body-1 font-normal text-center mt-[5px]">
               SOFTWARE DEVELOPMENT \\
@@ -41,11 +41,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="absolute w-full top-[190px] min-[1024px]:top-[100px] overflow-hidden long-top">
-        <img
-          src={pattern}
-          alt="vector pattern of the hero"
-          className="w-[175%] min-[540px]:w-[135%] min-[750px]:w-[124%] min-[1024px]:w-[100%] max-w-none"
-        />
+        <img src={pattern} alt="vector pattern of the hero" className="" />
       </div>
     </section>
   );
