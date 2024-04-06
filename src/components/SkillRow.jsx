@@ -5,7 +5,7 @@ export default function SkillRow({ logo1, logo2, name1, name2 }) {
         {logo1 && (
           <img
             src={logo1}
-            className="w-[28px] min-[530px]:w-[37px] min-[1223px]:w-[57px]"
+            className="w-[28px] min-[530px]:w-[37px] min-[1223px]:w-[50px]"
             alt={`Logo of ${name1}`}
           />
         )}
@@ -18,7 +18,7 @@ export default function SkillRow({ logo1, logo2, name1, name2 }) {
         {logo2 && (
           <img
             src={logo2}
-            className="w-[28px] min-[530px]:w-[37px] min-[1223px]:w-[57px] "
+            className="w-[28px] min-[530px]:w-[37px] min-[1223px]:w-[50px] "
             alt={`Logo of ${name2}`}
           />
         )}

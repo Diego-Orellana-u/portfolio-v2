@@ -1,6 +1,6 @@
 import { useId } from 'react';
 import SkillRow from './SkillRow';
-import aboutTest from '/img/about-test-img.webp';
+import me from '/img/me.jpeg';
 import htmlLogo from '../assets/logos/html-logo.png';
 import cssLogo from '../assets/logos/css-logo.png';
 import jsLogo from '../assets/logos/javascript-logo.png';
@@ -13,6 +13,7 @@ import routerLogo from '../assets/logos/react-router-logo.png';
 import reduxLogo from '../assets/logos/redux-logo.png';
 import tailwindLogo from '../assets/logos/tailwind-logo.png';
 import gitLogo from '../assets/logos/git-logo.png';
+import cvdiego from '/cv-diego.pdf';
 
 let skills = [
   [htmlLogo, 'HTML', cssLogo, 'CSS'],
@@ -26,13 +27,13 @@ let skills = [
 export default function AboutMe() {
   const skillId = useId();
   return (
-    <section id="about" className="px-[1.4rem] min-[1024px]:px-[6rem]">
+    <section id="about" className="px-[1.4rem] min-[1024px]:px-[6rem] pb-16">
       <h2 className="text-secondary-600 heading-1">ABOUT ME</h2>
       <div className="flex flex-col gap-7 min-[1024px]:gap-16 min-[728px]:flex-row-reverse min-[768px]:pb-8">
         <div className="min-[728px]:flex-1">
           <img
-            src={aboutTest}
-            className="w-full max-w-full h-auto object-cover rounded-md"
+            src={me}
+            className="w-full max-w-full h-auto object-cover rounded-md max-h-[800px]"
             alt="An image about me"
           />
         </div>
@@ -62,16 +63,16 @@ export default function AboutMe() {
       <div className="flex flex-col gap-7 min-[1024px]:gap-16 pb-10 pt-14 min-[1284px]:pt-20 min-[728px]:flex-row">
         <div className="min-[728px]:flex-1">
           <img
-            src={aboutTest}
-            className="w-screen max-w-full h-auto object-cover rounded-md"
+            src={me}
+            className="w-screen max-w-full h-auto object-cover rounded-md max-h-[1000px]"
             alt="An image of me"
           />
         </div>
         <div id="skills" className="min-[728px]:flex-1 text-body-1 pt-6 ">
-          <h3 className="text-heading-3 font-semibold mb-7 min-[1024px]:text-[4rem] min-[1536px]:text-[5rem] leading-[4.5rem] min-[1024px]:mb-16">
+          <h3 className="text-heading-3 font-semibold mb-7 min-[1024px]:text-[4rem] min-[1536px]:text-[5rem] leading-[4.5rem] min-[1024px]:mb-10">
             My Skills
           </h3>
-          <div className="flex flex-col gap-[4.5rem] pb-10">
+          <div className="flex flex-col gap-[3.5rem] pb-10">
             {skills.map((row, index) => (
               <SkillRow
                 key={`${skillId} - ${index}`}
@@ -82,9 +83,13 @@ export default function AboutMe() {
               />
             ))}
           </div>
-          <button className="bg-buttons-bg text-white-body-font py-3 px-5 rounded-3xl font-general font-light min-[1536px]:text-2xl">
+          <a
+            href={cvdiego}
+            target="_blank"
+            className="bg-buttons-bg text-white-body-font py-3 px-5 rounded-3xl font-general font-light min-[1536px]:text-2xl"
+          >
             Get my resume
-          </button>
+          </a>
         </div>
       </div>
     </section>

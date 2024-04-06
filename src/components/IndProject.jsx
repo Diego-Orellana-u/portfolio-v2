@@ -6,7 +6,7 @@ export default function IndProject({ proyectInfo }) {
   const paragraphId = useId();
 
   return (
-    <div className="min-[1024px]:border-y-[1px] min-[1024px]:border-primary-lines/30 min-[1024px]:pb-[5rem] min-[1024px]:pt-[5rem] min-[1150px]:pb-[8rem] min-[1150px]:pt-[11.5rem]">
+    <div className="min-[1024px]:border-y-[1px] min-[1024px]:border-primary-lines/30 min-[1024px]:pb-[5rem] min-[1024px]:pt-[5rem] min-[1150px]:pb-[8rem] min-[1150px]:pt-[7rem]">
       <div className="flex flex-col gap-y-7 pb-14 min-[1024px]:pb-0 px-[1.4rem] min-[1024px]:px-[6rem] min-[1024px]:flex-row">
         <div className="flex-1 min-[1024px]:pt-[1.2rem] min-[1248px]:pt-[1.6rem]">
           <img
@@ -61,7 +61,7 @@ export default function IndProject({ proyectInfo }) {
         </div>
 
         <div className="text-white-body-font flex flex-col relative flex-1 min-[1024px]:grow-[1.3]">
-          <div className="flex flex-wrap gap-4 pb-4 min-[1024px]:hidden">
+          <div className="flex flex-wrap gap-4 pb-4 min-[1024px]:hidden ">
             {proyectInfo[5].map((tech, idx) => (
               <div
                 key={`${techId} - ${idx}`}

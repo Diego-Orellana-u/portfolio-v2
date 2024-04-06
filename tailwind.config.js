@@ -23,7 +23,7 @@ export default {
       },
       colors: {
         'white-body-font': '#F2F2F2',
-        'white-bg': '#F8F8F2',
+        'white-bg': '#FAFAF0',
         'primary-lines': '#D9D9D9',
         'big-nums': '#666666',
         'black-body-font': '#333333',

@@ -9,11 +9,11 @@ export default function Hero() {
     >
       <div className="flex min-h-full justify-between flex-col text-[58px] min-[550px]:text-[108px] min-[1024px]:text-[128px] font-bold px-[1.4rem]">
         <div className="flex flex-col items-center pt-16 min-[550px]:pt-[0] min-[1424px]:pt-[7vh] long-p">
-          <div>
-            <span className="font-general text-transparent font-outline-3">
+          <div className="z-10">
+            <span className="font-general text-white-bg font-outline-3">
               HI
             </span>
-            <span className="font-general text-transparent font-outline-3">
+            <span className="font-general text-white-bg font-outline-3">
               , I&rsquo;M
             </span>
             <img

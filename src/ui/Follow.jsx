@@ -11,12 +11,17 @@ export default function Follow() {
           FOLLOW ME
         </h3>
         <div className="flex gap-7 justify-center">
-          <a href="https://twitter.com/diegoOrellanaJs" target="_blank">
+          <a
+            href="https://twitter.com/diegoOrellanaJs"
+            target="_blank"
+            rel="me"
+          >
             <img src={xLogo} alt="logo of twitter" className="w-[35px]" />
           </a>
           <a
             href="https://www.linkedin.com/in/diego-orellana-3ba1b52ba/"
             target="_blank"
+            rel="me"
           >
             <img
               src={linkedinLogo}
@@ -24,7 +29,11 @@ export default function Follow() {
               className="w-[35px]"
             />
           </a>
-          <a href="https://github.com/Diego-Orellana-u" target="_blank">
+          <a
+            href="https://github.com/Diego-Orellana-u"
+            target="_blank"
+            rel="me"
+          >
             <img src={githubLogo} alt="logo of github" className="w-[35px]" />
           </a>
           <a>
