@@ -27,15 +27,15 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="pb-[5vh] min-[550px]:text-end">
-          <div className="pb-10 min-[1024px]:pb-0">
+        <div className="pb-[5vh] min-[550px]:text-end relative">
+          <div className="pb-14 min-[1024px]:pb-0">
             <span className="hero-span">AVAILABLE FOR WORK //</span>
             <span className="hero-span underline">+569 4266 8187</span>
             <span className="hero-span underline">
               DIEGO.ORELLANA.GIT@GMAIL.COM
             </span>
           </div>
-          <span className="block text-body-1 font-normal text-center">
+          <span className="absolute bottom-8 left-0 right-0 block text-body-1 font-normal text-center">
             Scroll down to see more
           </span>
         </div>

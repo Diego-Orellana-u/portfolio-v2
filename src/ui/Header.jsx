@@ -1,15 +1,12 @@
-import logo from '../assets/logos/factorial-logo.svg';
-
 export default function Header() {
   return (
-    <header className="flex justify-between px-[1.4rem] pt-[1.4rem]">
-      <div className="flex gap-10">
-        <a href="#hero">
-          <img
-            src={logo}
-            alt="logo of Factorial"
-            className="w-[104px] h-[35px] mt-[4px] min-[550px]:w-[165px] min-[550px]:h-[55px]"
-          />
+    <header className="flex justify-between px-[1.4rem] pt-[1.4rem] min-[1024px]:px-[2.5rem]">
+      <div className="flex gap-16 h-fit">
+        <a
+          href="#hero"
+          className="self-center font-extrabold text-[1.7rem] font-general"
+        >
+          FACTORIAL
         </a>
         <div className="flex flex-col text-[0.9rem] max-[550px]:hidden">
           <span>SOFTWARE DEVELOPMENT \\</span>
