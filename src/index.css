@@ -111,4 +111,20 @@
   }
 }
 
+.menu-blocks {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.menu-block {
+  height: 100vh;
+  flex: 1;
+}
+
+.hamb {
+  scale: 0;
+}
 /* #943636 red */
