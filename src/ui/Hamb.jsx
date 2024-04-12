@@ -1,26 +1,86 @@
 import gsap from 'gsap';
-export default function Hamb({ active, setActive }) {
-  const handleClick = () => {
-    setActive(!active);
+import { useLayoutEffect } from 'react';
+export default function Hamb({
+  active,
+  setActive,
+  isAnimating,
+  setIsAnimating,
+}) {
+  useLayoutEffect(() => {
+    if (!active && isAnimating) {
+      const tl = gsap.timeline({
+        onComplete: () => {
+          setIsAnimating(false);
+          setActive(true);
+        },
+      });
 
-    gsap.to('.menu-container', {
-      opacity: 0,
-      duration: 0.8,
-      ease: 'power3.inOut',
-    });
+      gsap.set('body', { delay: 0.6, overflow: 'hidden' });
 
-    gsap.to('.menu-block', {
-      y: '0',
-      duration: 0.4,
-      stagger: -0.1,
-      ease: 'power3.inOut',
-    });
+      gsap.set('.menu-container', {
+        top: '0vh',
+        duration: 0,
+        ease: 'power3.inOut',
+      });
 
-    gsap.set('body', { overflow: '' });
-  };
+      tl.to('.menu-block', {
+        y: '-100vh',
+        duration: 0.4,
+        stagger: -0.1,
+        ease: 'power3.inOut',
+      });
+
+      tl.to(
+        '.menu-container',
+        {
+          opacity: 100,
+          duration: 0.8,
+          ease: 'power3.inOut',
+        },
+        '-=.42'
+      );
+    }
+
+    if (active && isAnimating) {
+      const tl = gsap.timeline({
+        onComplete: () => {
+          setIsAnimating(false);
+          setActive(false);
+        },
+      });
+
+      gsap.set('body', { overflow: '' });
+
+      tl.to('.menu-block', {
+        y: '0',
+        duration: 0.4,
+        stagger: -0.1,
+        ease: 'power3.inOut',
+      });
+
+      tl.to(
+        '.menu-container',
+        {
+          opacity: 0,
+          duration: 0.8,
+          ease: 'power3.inOut',
+        },
+        '-=1.4'
+      );
+
+      tl.to('.menu-container', {
+        top: '-100vh',
+        duration: 0,
+        ease: 'power3.inOut',
+      });
+    }
+  }, [isAnimating]);
+
   return (
     <div
-      onClick={handleClick}
+      onClick={() => {
+        setIsAnimating(true);
+      }}
       className="hamb fixed top-16 right-6 min-[1024px]:right-10 rounded-full bg-secondary-800 h-16 w-16 min-[1024px]:h-24 min-[1024px]:w-24 z-[9999] flex justify-center items-center cursor-pointer"
     >
       <svg

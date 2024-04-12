@@ -14,6 +14,7 @@ export default function App() {
   gsap.registerPlugin(ScrollTrigger);
 
   const [activeMenu, setActiveMenu] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useLayoutEffect(() => {
     gsap.to('.hamb', {
@@ -32,8 +33,13 @@ export default function App() {
 
   return (
     <div className="bg-white-bg">
-      <Menu active={activeMenu} />
-      <Hamb active={activeMenu} setActive={setActiveMenu} />
+      <Menu />
+      <Hamb
+        active={activeMenu}
+        setActive={setActiveMenu}
+        isAnimating={isAnimating}
+        setIsAnimating={setIsAnimating}
+      />
       <Header />
       <Hero />
       <Projects />

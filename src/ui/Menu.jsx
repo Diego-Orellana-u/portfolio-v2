@@ -1,37 +1,4 @@
-import gsap from 'gsap';
-import { useLayoutEffect } from 'react';
-
-export default function Menu({ active }) {
-  useLayoutEffect(() => {
-    const tl = gsap.timeline();
-    if (active) {
-      gsap.set('.menu-container', {
-        y: '-100vh',
-        duration: 0,
-        ease: 'power3.inOut',
-      });
-
-      gsap.set('body', { delay: 0.6, overflow: 'hidden' });
-
-      tl.to('.menu-block', {
-        y: '-100vh',
-        duration: 0.4,
-        stagger: -0.1,
-        ease: 'power3.inOut',
-      });
-
-      tl.to(
-        '.menu-container',
-        {
-          opacity: 100,
-          duration: 0.8,
-          ease: 'power3.inOut',
-        },
-        '-=0.4'
-      );
-    }
-  }, [active]);
-
+export default function Menu() {
   return (
     <div>
       <div className="menu-blocks">
@@ -42,10 +9,7 @@ export default function Menu({ active }) {
         <div className="menu-block block-m-5"></div>
         <div className="menu-block block-m-6"></div>
       </div>
-      <div
-        className="menu-container"
-        style={{ top: active ? '100vh' : '-100vh' }}
-      >
+      <div className="menu-container">
         <div className="menu-links text-white-body-font">
           <a href="#" className="rolling-text link">
             <div className="blockm">
@@ -97,6 +61,24 @@ export default function Menu({ active }) {
               <span className="letter">O</span>
               <span className="letter">U</span>
               <span className="letter">T</span>
+            </div>
+          </a>
+          <a href="#" className="rolling-text link">
+            <div className="blockm">
+              <span className="letter">S</span>
+              <span className="letter">K</span>
+              <span className="letter">I</span>
+              <span className="letter">L</span>
+              <span className="letter">L</span>
+              <span className="letter">S</span>
+            </div>
+            <div className="blockm">
+              <span className="letter">S</span>
+              <span className="letter">K</span>
+              <span className="letter">I</span>
+              <span className="letter">L</span>
+              <span className="letter">L</span>
+              <span className="letter">S</span>
             </div>
           </a>
           <a href="#" className="rolling-text link">
