@@ -62,7 +62,7 @@ export default function Hamb() {
           duration: 0.6,
           ease: 'power3.inOut',
         },
-        '-=1.4'
+        '-=1.2'
       );
 
       tl.to('.menu-container', {

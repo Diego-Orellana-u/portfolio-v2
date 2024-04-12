@@ -8,12 +8,12 @@ import gsap from 'gsap';
 import Hamb from './ui/Hamb';
 import Menu from './ui/Menu';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useLayoutEffect, useState } from 'react';
+import { useGSAP } from '@gsap/react';
 
 export default function App() {
   gsap.registerPlugin(ScrollTrigger);
 
-  useLayoutEffect(() => {
+  useGSAP(() => {
     gsap.to('.hamb', {
       scrollTrigger: {
         trigger: '.hamb',
