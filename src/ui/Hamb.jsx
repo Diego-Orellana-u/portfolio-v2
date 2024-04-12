@@ -1,11 +1,12 @@
 import gsap from 'gsap';
 import { Tween } from 'gsap/gsap-core';
-import { useLayoutEffect, useState } from 'react';
+import { useGSAP } from '@gsap/react';
+import { useState } from 'react';
 export default function Hamb() {
   const [activeMenu, setActiveMenu] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  useLayoutEffect(() => {
+  useGSAP(() => {
     if (!activeMenu && isAnimating) {
       const tl = gsap.timeline({
         onComplete: () => {

@@ -27,7 +27,7 @@ export default {
         'primary-lines': '#D9D9D9',
         'big-nums': '#666666',
         'black-body-font': '#333333',
-        'black-bg': '#2B2B2B',
+        'black-bg': '#222',
         'buttons-bg': '#393632',
         'secondary-500': '#AEAE9D',
         'secondary-600': '#8C8C73',
