@@ -1,17 +1,16 @@
 import gsap from 'gsap';
-import { useLayoutEffect } from 'react';
-export default function Hamb({
-  active,
-  setActive,
-  isAnimating,
-  setIsAnimating,
-}) {
+import { Tween } from 'gsap/gsap-core';
+import { useLayoutEffect, useState } from 'react';
+export default function Hamb() {
+  const [activeMenu, setActiveMenu] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+
   useLayoutEffect(() => {
-    if (!active && isAnimating) {
+    if (!activeMenu && isAnimating) {
       const tl = gsap.timeline({
         onComplete: () => {
           setIsAnimating(false);
-          setActive(true);
+          setActiveMenu(true);
         },
       });
 
@@ -23,29 +22,26 @@ export default function Hamb({
         ease: 'power3.inOut',
       });
 
+      Tween.to('.menu-container', {
+        opacity: 100,
+        delay: 0.55,
+        duration: 0.6,
+        ease: 'power3.inOut',
+      });
+
       tl.to('.menu-block', {
         y: '-100vh',
         duration: 0.4,
         stagger: -0.1,
         ease: 'power3.inOut',
       });
-
-      tl.to(
-        '.menu-container',
-        {
-          opacity: 100,
-          duration: 0.8,
-          ease: 'power3.inOut',
-        },
-        '-=.42'
-      );
     }
 
-    if (active && isAnimating) {
+    if (activeMenu && isAnimating) {
       const tl = gsap.timeline({
         onComplete: () => {
           setIsAnimating(false);
-          setActive(false);
+          setActiveMenu(false);
         },
       });
 
@@ -62,7 +58,7 @@ export default function Hamb({
         '.menu-container',
         {
           opacity: 0,
-          duration: 0.8,
+          duration: 0.6,
           ease: 'power3.inOut',
         },
         '-=1.4'

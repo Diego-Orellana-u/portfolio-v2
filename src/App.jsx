@@ -13,9 +13,6 @@ import { useLayoutEffect, useState } from 'react';
 export default function App() {
   gsap.registerPlugin(ScrollTrigger);
 
-  const [activeMenu, setActiveMenu] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-
   useLayoutEffect(() => {
     gsap.to('.hamb', {
       scrollTrigger: {
@@ -34,12 +31,7 @@ export default function App() {
   return (
     <div className="bg-white-bg">
       <Menu />
-      <Hamb
-        active={activeMenu}
-        setActive={setActiveMenu}
-        isAnimating={isAnimating}
-        setIsAnimating={setIsAnimating}
-      />
+      <Hamb />
       <Header />
       <Hero />
       <Projects />

@@ -5,7 +5,7 @@ import linkedinLogo from '../assets/logos/linkedin-logo.svg';
 
 export default function Follow() {
   return (
-    <div className="pt-6 min-[1024px]:pt-10 min-[1224px]:flex min-[1224px]:justify-between">
+    <div className="pt-6 min-[1024px]:pt-0 min-[1224px]:pt-6 min-[1224px]:flex min-[1224px]:justify-between">
       <div className="my-10 min-[1224px]:my-0">
         <h3 className="text-center text-heading-4 min-[1024px]:text-[1.6rem] mb-3">
           FOLLOW ME
