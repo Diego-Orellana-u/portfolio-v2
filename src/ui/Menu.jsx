@@ -8,11 +8,13 @@ export default function Menu() {
         <div className="menu-block block-m-4"></div>
         <div className="menu-block block-m-5"></div>
         <div className="menu-block block-m-6"></div>
+        <div className="menu-block block-m-6 max-[768px]:hidden "></div>
+        <div className="menu-block block-m-6 max-[768px]:hidden "></div>
       </div>
       <div className="menu-container">
         <div className="menu-links text-white-body-font">
           <a href="#" className="rolling-text link">
-            <div className="blockm">
+            <div className="blockm font-boska">
               <span className="letter">H</span>
               <span className="letter">O</span>
               <span className="letter">M</span>

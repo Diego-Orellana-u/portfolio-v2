@@ -41,6 +41,11 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Boska';
+    src: url('./assets/fonts/Boska-Regular.ttf');
+  }
+
   @media (min-width: 640px) {
   }
   a,
@@ -147,29 +152,30 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3em;
+  padding-top: 5rem;
 }
 
 .link {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .rolling-text {
   display: inline-block;
-  height: 100px;
+  height: 104px;
   text-decoration: none;
   line-height: 100px;
   overflow: hidden;
 }
 
 .letter {
-  font-family: 'GeneralSans-Variable';
+  font-family: 'Boska';
+  font-weight: 200;
 }
 
 .rolling-text:hover .letter,
 .rolling-text.play .letter {
-  transform: translateY(-100%);
+  transform: translateY(-120%);
 }
 
 .rolling-text .blockm:last-child {

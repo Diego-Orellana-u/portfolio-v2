@@ -78,7 +78,7 @@ export default function Hamb() {
       onClick={() => {
         setIsAnimating(true);
       }}
-      className="hamb fixed top-16 right-6 min-[1024px]:right-10 rounded-full bg-secondary-800 h-16 w-16 min-[1024px]:h-24 min-[1024px]:w-24 z-[9999] flex justify-center items-center cursor-pointer"
+      className="hamb fixed top-8 right-6 min-[1024px]:right-10 rounded-full bg-secondary-800 h-16 w-16 min-[1024px]:h-24 min-[1024px]:w-24 z-[9999] flex justify-center items-center cursor-pointer"
     >
       <svg
         className="w-7"

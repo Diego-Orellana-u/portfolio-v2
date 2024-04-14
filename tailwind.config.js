@@ -20,6 +20,7 @@ export default {
       fontFamily: {
         general: ['GeneralSans-Variable', 'sans-serif'],
         grotesk: ['CabinetGrotesk-Variable', 'sans-serif'],
+        boska: ['Boska', 'sans-serif'],
       },
       colors: {
         'white-body-font': '#F2F2F2',
