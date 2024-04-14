@@ -24,7 +24,7 @@ export default function IndProject({ proyectInfo }) {
             <a
               href={proyectInfo[7]}
               target="_blank"
-              className="flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[2.1rem]"
+              className="flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
             >
               <img
                 src={arrowRight}
@@ -36,7 +36,7 @@ export default function IndProject({ proyectInfo }) {
             <a
               href={proyectInfo[8]}
               target="_blank"
-              className="flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[2.1rem]"
+              className="flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
             >
               <img
                 src={arrowRight}
@@ -48,7 +48,7 @@ export default function IndProject({ proyectInfo }) {
             <a
               href={proyectInfo[9]}
               target="_blank"
-              className="flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[2.1rem]"
+              className="flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
             >
               <img
                 src={arrowRight}

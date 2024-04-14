@@ -3,10 +3,7 @@ import pattern from '../assets/logos/pattern.svg';
 
 export default function Hero() {
   return (
-    <section
-      id="hero"
-      className="h-[calc(100vh-135px)] min-[1024px]:h-[calc(100vh-80px)] linear-gradient"
-    >
+    <section className="h-[calc(100vh-135px)] min-[1024px]:h-[calc(100vh-80px)] linear-gradient">
       <div className="flex min-h-full justify-between flex-col text-[58px] min-[550px]:text-[108px] min-[1024px]:text-[128px] font-bold px-[1.4rem]">
         <div className="flex flex-col items-center pt-16 min-[550px]:pt-[0] min-[1424px]:pt-[7vh] long-p">
           <div className="z-10">

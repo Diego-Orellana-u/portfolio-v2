@@ -2,9 +2,8 @@ import gsap from 'gsap';
 import { Tween } from 'gsap/gsap-core';
 import { useGSAP } from '@gsap/react';
 import { useState } from 'react';
-export default function Hamb() {
+export default function Hamb({ isAnimating, setIsAnimating }) {
   const [activeMenu, setActiveMenu] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
 
   useGSAP(() => {
     if (!activeMenu && isAnimating) {
@@ -24,15 +23,15 @@ export default function Hamb() {
       });
 
       Tween.to('.menu-container', {
-        opacity: 100,
-        delay: 0.55,
-        duration: 0.6,
+        opacity: 1,
+        delay: 1,
+        duration: 0.4,
         ease: 'power3.inOut',
       });
 
       tl.to('.menu-block', {
         y: '-100vh',
-        duration: 0.4,
+        duration: 0.5,
         stagger: -0.1,
         ease: 'power3.inOut',
       });
@@ -48,21 +47,21 @@ export default function Hamb() {
 
       gsap.set('body', { overflow: '' });
 
-      tl.to('.menu-block', {
-        y: '0',
-        duration: 0.4,
-        stagger: -0.1,
+      tl.to('.menu-container', {
+        opacity: 0,
+        duration: 0.8,
         ease: 'power3.inOut',
       });
 
       tl.to(
-        '.menu-container',
+        '.menu-block',
         {
-          opacity: 0,
-          duration: 0.6,
+          y: '0',
+          duration: 0.5,
+          stagger: -0.1,
           ease: 'power3.inOut',
         },
-        '-=1.2'
+        '-=.7'
       );
 
       tl.to('.menu-container', {
@@ -78,7 +77,7 @@ export default function Hamb() {
       onClick={() => {
         setIsAnimating(true);
       }}
-      className="hamb fixed top-8 right-6 min-[1024px]:right-10 rounded-full bg-secondary-800 h-16 w-16 min-[1024px]:h-24 min-[1024px]:w-24 z-[9999] flex justify-center items-center cursor-pointer"
+      className="hamb fixed top-8 right-8 min-[1024px]:right-10 rounded-full bg-secondary-800 h-16 w-16 min-[1024px]:h-24 min-[1024px]:w-24 z-[9999] flex justify-center items-center cursor-pointer"
     >
       <svg
         className="w-7"

@@ -1,6 +1,9 @@
 export default function Header() {
   return (
-    <header className="flex justify-between px-[1.4rem] pt-[1.4rem] min-[1024px]:px-[2.5rem]">
+    <header
+      id="hero"
+      className="flex justify-between px-[1.4rem] pt-[1.4rem] min-[1024px]:px-[2.5rem]"
+    >
       <div className="flex gap-16 h-fit">
         <a
           href="#hero"

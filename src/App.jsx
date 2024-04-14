@@ -9,9 +9,12 @@ import Hamb from './ui/Hamb';
 import Menu from './ui/Menu';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import { useState } from 'react';
 
 export default function App() {
   gsap.registerPlugin(ScrollTrigger);
+
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useGSAP(() => {
     gsap.to('.hamb', {
@@ -30,8 +33,8 @@ export default function App() {
 
   return (
     <div className="bg-white-bg">
-      <Menu />
-      <Hamb />
+      <Menu setIsAnimating={setIsAnimating} />
+      <Hamb isAnimating={isAnimating} setIsAnimating={setIsAnimating} />
       <Header />
       <Hero />
       <Projects />

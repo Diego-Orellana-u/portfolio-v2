@@ -1,4 +1,5 @@
-export default function Menu() {
+import favicon from '../assets/logos/fac-favicon.svg';
+export default function Menu({ setIsAnimating }) {
   return (
     <div>
       <div className="menu-blocks">
@@ -11,9 +12,26 @@ export default function Menu() {
         <div className="menu-block block-m-6 max-[768px]:hidden "></div>
         <div className="menu-block block-m-6 max-[768px]:hidden "></div>
       </div>
-      <div className="menu-container">
-        <div className="menu-links text-white-body-font">
-          <a href="#" className="rolling-text link">
+      <div className="menu-container min-[768px]:flex py-8 px-[6rem] justify-start gap-8">
+        <div className="max-[767px]:hidden w-[60%] flex flex-col justify-between">
+          <div>
+            <img src={favicon} alt="favicon of Factorial" />
+          </div>
+          <div className="flex flex-col text-white-body-font gap-2 pb-[1.3rem]">
+            <a href="">LinkedIn</a>
+            <a href="">GitHub</a>
+            <a href="">Resume</a>
+            <a href="">diego.orellana.git@gmail.com</a>
+          </div>
+        </div>
+        <div className="menu-links text-white-body-font min-[768px]:items-start min-[768px]:justify-evenly">
+          <a
+            href="#hero"
+            className="rolling-text link"
+            onClick={() => {
+              setIsAnimating(true);
+            }}
+          >
             <div className="blockm font-boska">
               <span className="letter">H</span>
               <span className="letter">O</span>
@@ -27,7 +45,13 @@ export default function Menu() {
               <span className="letter">E</span>
             </div>
           </a>
-          <a href="#" className="rolling-text link">
+          <a
+            href="#projects"
+            className="rolling-text link"
+            onClick={() => {
+              setIsAnimating(true);
+            }}
+          >
             <div className="blockm">
               <span className="letter">P</span>
               <span className="letter">R</span>
@@ -49,7 +73,13 @@ export default function Menu() {
               <span className="letter">S</span>
             </div>
           </a>
-          <a href="#" className="rolling-text link">
+          <a
+            href="#about"
+            className="rolling-text link"
+            onClick={() => {
+              setIsAnimating(true);
+            }}
+          >
             <div className="blockm">
               <span className="letter">A</span>
               <span className="letter">B</span>
@@ -65,7 +95,13 @@ export default function Menu() {
               <span className="letter">T</span>
             </div>
           </a>
-          <a href="#" className="rolling-text link">
+          <a
+            href="#skills"
+            className="rolling-text link"
+            onClick={() => {
+              setIsAnimating(true);
+            }}
+          >
             <div className="blockm">
               <span className="letter">S</span>
               <span className="letter">K</span>
@@ -83,7 +119,13 @@ export default function Menu() {
               <span className="letter">S</span>
             </div>
           </a>
-          <a href="#" className="rolling-text link">
+          <a
+            href="#contact"
+            className="rolling-text link"
+            onClick={() => {
+              setIsAnimating(true);
+            }}
+          >
             <div className="blockm">
               <span className="letter">C</span>
               <span className="letter">O</span>
