@@ -75,7 +75,7 @@ export default function IndProject({ proyectInfo }) {
             <h3 className="text-heading-4 font-medium min-[1024px]:text-[3rem] min-[1248px]:text-[4rem] min-[1024px]:font-semibold">
               {proyectInfo[2]}
             </h3>
-            <span className="font-thin min-[1536px]:text-2xl">
+            <span className="font-thin min-[1536px]:text-2xl mb-2">
               {proyectInfo[3]}
             </span>
             <div className="flex flex-col gap-4 min-[768px]:gap-5">

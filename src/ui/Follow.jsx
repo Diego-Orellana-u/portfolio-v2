@@ -6,7 +6,7 @@ import linkedinLogo from '../assets/logos/linkedin-logo.svg';
 export default function Follow() {
   return (
     <div className="min-[1224px]:pt-6 min-[1224px]:flex min-[1224px]:justify-between">
-      <div className="my-10 min-[1224px]:my-0">
+      <div className="my-10 min-[1224px]:my-0 text-black-body-font">
         <h3 className="text-center text-[1.5rem] min-[1024px]:text-[1.6rem] mb-3">
           FOLLOW ME
         </h3>
@@ -41,8 +41,8 @@ export default function Follow() {
           </a>
         </div>
       </div>
-      <div>
-        <h3 className="text-center text-[1.5rem] min-[1024px]:text-[1.6rem] min-[1224px]:mb-4">
+      <div className="text-black-body-font">
+        <h3 className="text-center text-[1.5rem] min-[1024px]:text-[1.6rem] min-[1224px]:mb-4 ">
           MAIL ME AT
         </h3>
         <span className="block text-center text-body-1">

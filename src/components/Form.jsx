@@ -11,6 +11,7 @@ export default function Form() {
             id="name"
             className="pb-1 border-b-[1px] focus:outline-none border-primary-lines/30 bg-transparent  placeholder:text-white-body-font w-full"
             placeholder="Your Name"
+            maxLength="50"
           />
         </div>
 
@@ -23,6 +24,7 @@ export default function Form() {
             id="email"
             className="pb-1 border-b-[1px] focus:outline-none border-primary-lines/30 bg-transparent placeholder:text-white-body-font w-full"
             placeholder="Your Email"
+            maxLength="50"
           />
         </div>
 
@@ -35,6 +37,7 @@ export default function Form() {
             id="budget"
             className="pb-1 border-b-[1px] focus:outline-none border-primary-lines/30 bg-transparent placeholder:text-white-body-font w-full"
             placeholder="Your Budget (optional)"
+            maxLength="30"
           />
         </div>
 
@@ -47,6 +50,7 @@ export default function Form() {
             id="project"
             className="resize-none h-20 focus:outline-none border-b-[1px] border-primary-lines/30 bg-transparent placeholder:text-white-body-font w-full"
             placeholder="Your Project Idea (optional)"
+            maxLength="250"
           />
         </div>
         <button className="border border-white w-fit px-4 py-[0.35rem] rounded-3xl text-sm tracking-[0.04rem] self-end">

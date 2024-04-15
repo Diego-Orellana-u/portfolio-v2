@@ -9,7 +9,7 @@ export default function SkillRow({ logo1, logo2, name1, name2 }) {
             alt={`Logo of ${name1}`}
           />
         )}
-        <span className="text-body-2 min-[350px]:text-body-1 min-[1536px]:text-2xl">
+        <span className="text-body-2 text-black-body-font min-[350px]:text-body-1 min-[1536px]:text-2xl">
           {name1}
         </span>
       </div>
@@ -22,7 +22,7 @@ export default function SkillRow({ logo1, logo2, name1, name2 }) {
             alt={`Logo of ${name2}`}
           />
         )}
-        <span className="text-body-2 min-[360px]:text-body-1 min-[1536px]:text-2xl">
+        <span className="text-body-2 text-black-body-font min-[360px]:text-body-1 min-[1536px]:text-2xl">
           {name2}
         </span>
       </div>

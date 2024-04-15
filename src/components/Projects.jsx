@@ -6,7 +6,9 @@ export default function Projects() {
   const proyectId = useId();
   return (
     <section id="projects" className="bg-black-bg rounded-t-2xl">
-      <h2 className="text-secondary-600 heading-1">RECENT PROJECTS</h2>
+      <h2 className="text-secondary-600 text-transparent projects-heading">
+        RECENT PROJECTS
+      </h2>
       {proyectsData.map((proyect, idx) => (
         <IndProject key={`${proyectId} - ${idx}`} proyectInfo={proyect} />
       ))}

@@ -7,11 +7,11 @@ export default function Header() {
       <div className="flex gap-16 h-fit">
         <a
           href="#hero"
-          className="self-center font-extrabold text-[1.7rem] font-general"
+          className="self-center font-extrabold text-[1.7rem] font-general text-black-body-font"
         >
           FACTORIAL
         </a>
-        <div className="flex flex-col text-[0.9rem] max-[550px]:hidden">
+        <div className="flex flex-col text-[0.9rem] max-[550px]:hidden text-black-body-font">
           <span>SOFTWARE DEVELOPMENT \\</span>
           <span>OPTIMIZATION</span>
           <span>SOLUTIONS</span>
@@ -21,25 +21,40 @@ export default function Header() {
       <nav className="text-body-1 self-center">
         <ul className="min-[1024px]:flex min-[1024px]:items-center min-[1024px]:gap-9">
           <li>
-            <a href="#skills" className="group relative md:inline-block">
+            <a
+              href="#skills"
+              className="group relative md:inline-block text-black-body-font"
+            >
               <span>Projects</span>
-              <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-800 duration-300 ease-in-out group-hover:w-full"></span>
             </a>
           </li>
           <li>
-            <a href="#skills" className="group relative md:inline-block">
+            <a
+              href="#skills"
+              className="group relative md:inline-block text-black-body-font"
+            >
               <span>About</span>
-              <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-800 duration-300 ease-in-out group-hover:w-full"></span>
             </a>
           </li>
           <li>
-            <a href="#skills" className="group relative md:inline-block">
+            <a
+              href="#skills"
+              className="group relative md:inline-block text-black-body-font"
+            >
               <span>Skills</span>
-              <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-800 duration-300 ease-in-out group-hover:w-full"></span>
             </a>
           </li>
-          <li className="min-[1024px]:hidden">
-            <a href="#contact">Contact</a>
+          <li className="min-[1024px]:hidden text-black-body-font">
+            <a
+              href="#contact"
+              className="group relative md:inline-block text-black-body-font"
+            >
+              <span>Contact</span>
+              <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-800 duration-300 ease-in-out group-hover:w-full"></span>
+            </a>
           </li>
           <li className="max-[1023px]:hidden">
             <a

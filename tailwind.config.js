@@ -34,6 +34,7 @@ export default {
         'secondary-600': '#8C8C73',
         'secondary-700': '#70705C',
         'secondary-800': '#C93D4B',
+        'secondary-900': '#8F3F47',
         'accent-400': '#0E0E0C',
         'accent-300': '#262626',
         'accent-200': '#4D4D4D',
