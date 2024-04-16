@@ -1,5 +1,5 @@
 import logo from '../assets/logos/factorial-logo.svg';
-import Pattern from '../assets/logos/test-lines.jsx';
+import pattern from '../assets/logos/pattern.svg';
 
 export default function Hero() {
   return (
@@ -38,12 +38,12 @@ export default function Hero() {
         </div>
       </div>
       <div className="absolute w-full top-[190px] min-[1024px]:top-[100px] overflow-hidden long-top">
-        {/* <img
+        <img
           src={pattern}
           alt="vector pattern of the hero"
           className="w-full"
-        /> */}
-        <Pattern />
+        />
+        {/* <Pattern /> */}
       </div>
     </section>
   );
