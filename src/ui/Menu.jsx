@@ -12,7 +12,7 @@ export default function Menu({ setIsAnimating }) {
         <div className="menu-block block-m-6 max-[768px]:hidden "></div>
         <div className="menu-block block-m-6 max-[768px]:hidden "></div>
       </div>
-      <div className="menu-container min-[768px]:flex py-8 px-[6rem] justify-start gap-8">
+      <div className="menu-container min-[768px]:flex py-8 min-[768px]:px-[3rem] min-[1024px]:px-[6rem] justify-start gap-8">
         <div className="max-[767px]:hidden w-[60%] flex flex-col justify-between">
           <div>
             <img src={favicon} alt="favicon of Factorial" />

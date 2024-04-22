@@ -4,7 +4,7 @@ export default function Header() {
       id="hero"
       className="flex justify-between px-[1.4rem] pt-[1.4rem] min-[1024px]:px-[2.5rem]"
     >
-      <div className="flex gap-16 h-fit">
+      <div className="flex gap-8 min-[1260px]:gap-12 h-fit">
         <a
           href="#hero"
           className="self-center font-extrabold text-[1.7rem] font-general text-black-body-font"
