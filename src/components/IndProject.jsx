@@ -6,7 +6,7 @@ export default function IndProject({ proyectInfo }) {
   const paragraphId = useId();
 
   return (
-    <div className="min-[1024px]:border-y-[1px] min-[1024px]:border-primary-lines/30 min-[1024px]:pb-[5rem] min-[1024px]:pt-[5rem] min-[1150px]:pb-[8rem] min-[1150px]:pt-[7rem]">
+    <div className="z-[10] min-[1024px]:border-y-[1px] min-[1024px]:border-primary-lines/30 min-[1024px]:pb-[5rem] min-[1024px]:pt-[5rem] min-[1150px]:pb-[8rem] min-[1150px]:pt-[7rem]">
       <div className="flex flex-col gap-y-7 pb-14 min-[1024px]:pb-0 px-[1.4rem] min-[1024px]:px-[6rem] min-[1024px]:flex-row">
         <div className="flex-1 min-[1024px]:pt-[1.2rem] min-[1248px]:pt-[1.6rem]">
           <img
@@ -24,7 +24,7 @@ export default function IndProject({ proyectInfo }) {
             <a
               href={proyectInfo[7]}
               target="_blank"
-              className="flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
+              className="z-10 flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
             >
               <img
                 src={arrowRight}
@@ -36,7 +36,7 @@ export default function IndProject({ proyectInfo }) {
             <a
               href={proyectInfo[8]}
               target="_blank"
-              className="flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
+              className="z-10 flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
             >
               <img
                 src={arrowRight}
@@ -48,7 +48,7 @@ export default function IndProject({ proyectInfo }) {
             <a
               href={proyectInfo[9]}
               target="_blank"
-              className="flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
+              className="z-10 flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
             >
               <img
                 src={arrowRight}
