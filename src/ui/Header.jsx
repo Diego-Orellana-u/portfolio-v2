@@ -14,7 +14,7 @@ export default function Header() {
         <div className="flex flex-col text-[0.9rem] max-[550px]:hidden text-black-body-font">
           <span>SOFTWARE DEVELOPMENT \\</span>
           <span>OPTIMIZATION</span>
-          <span>SOLUTIONS</span>
+          <span>DESIGN</span>
         </div>
       </div>
 
