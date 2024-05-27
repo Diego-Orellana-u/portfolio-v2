@@ -1,4 +1,6 @@
 import favicon from '../assets/logos/fac-favicon.svg';
+import cvdiego from '/cv-diego.pdf';
+
 export default function Menu({ setIsAnimating }) {
   return (
     <div>
@@ -18,9 +20,9 @@ export default function Menu({ setIsAnimating }) {
             <img src={favicon} alt="favicon of Factorial" />
           </div>
           <div className="flex flex-col text-white-body-font gap-2 pb-[1.3rem]">
-            <a href="">LinkedIn</a>
-            <a href="">GitHub</a>
-            <a href="">Resume</a>
+            {/* <a href="">LinkedIn</a> */}
+            <a href="https://github.com/Diego-Orellana-u" target='_blank'>GitHub</a>
+            <a href={cvdiego} target='_blank'>Resume</a>
             <a href="">diego.orellana.git@gmail.com</a>
           </div>
         </div>
