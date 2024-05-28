@@ -5,14 +5,14 @@ export default function Menu({ setIsAnimating }) {
   return (
     <div>
       <div className="menu-blocks">
-        <div className="menu-block block-m-1"></div>
-        <div className="menu-block block-m-2"></div>
-        <div className="menu-block block-m-3"></div>
-        <div className="menu-block block-m-4"></div>
-        <div className="menu-block block-m-5"></div>
-        <div className="menu-block block-m-6"></div>
-        <div className="menu-block block-m-6 max-[768px]:hidden "></div>
-        <div className="menu-block block-m-6 max-[768px]:hidden "></div>
+        <div className="menu-block"></div>
+        <div className="menu-block"></div>
+        <div className="menu-block"></div>
+        <div className="menu-block"></div>
+        <div className="menu-block"></div>
+        <div className="menu-block"></div>
+        <div className="menu-block max-[768px]:hidden "></div>
+        <div className="menu-block max-[768px]:hidden "></div>
       </div>
       <div className="menu-container min-[768px]:flex py-8 min-[768px]:px-[3rem] min-[1024px]:px-[6rem] justify-start gap-8">
         <div className="max-[767px]:hidden w-[60%] flex flex-col justify-between">
@@ -34,7 +34,7 @@ export default function Menu({ setIsAnimating }) {
               setIsAnimating(true);
             }}
           >
-            <div className="blockm font-boska">
+            <div className="blockm">
               <span className="letter">H</span>
               <span className="letter">O</span>
               <span className="letter">M</span>
