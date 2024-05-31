@@ -1,7 +1,7 @@
 import { useId } from 'react';
 import SkillRow from './SkillRow';
-import me from '/img/me2.jpeg';
-import me3 from '/img/me3.jpeg';
+import me2 from '/img/me2.webp';
+import me3 from '/img/me3.webp';
 import htmlLogo from '../assets/logos/html-logo.png';
 import cssLogo from '../assets/logos/css-logo.png';
 import jsLogo from '../assets/logos/javascript-logo.png';
@@ -33,7 +33,7 @@ export default function AboutMe() {
       <div className="flex flex-col gap-7 min-[1024px]:gap-16 min-[728px]:flex-row-reverse min-[768px]:pb-8">
         <div className="min-[728px]:flex-1">
           <img
-            src={me}
+            src={me2}
             className="w-full max-w-full h-auto object-cover rounded-md max-h-[800px]"
             alt="An image about me"
           />
