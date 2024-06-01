@@ -44,6 +44,7 @@
   @font-face {
     font-family: 'Boska';
     src: url('./assets/fonts/Boska-Regular.ttf');
+    font-display: swap;
   }
 
   @media (min-width: 640px) {
