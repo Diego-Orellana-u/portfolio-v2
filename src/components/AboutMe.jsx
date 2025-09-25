@@ -1,32 +1,28 @@
-import { useId } from 'react';
-import SkillRow from './SkillRow';
-import me2 from '/img/me2.webp';
-import me3 from '/img/me3.webp';
-import htmlLogo from '../assets/logos/html-logo.png';
-import cssLogo from '../assets/logos/css-logo.png';
-import jsLogo from '../assets/logos/javascript-logo.png';
-import reactLogo from '../assets/logos/react-logo.png';
-import jestLogo from '../assets/logos/jest-logo.png';
-import liquidLogo from '../assets/logos/liquid-logo.png';
-import mongodbLogo from '../assets/logos/mongodb-logo.png';
-import nodeLogo from '../assets/logos/node-logo.png';
-import routerLogo from '../assets/logos/react-router-logo.png';
-import reduxLogo from '../assets/logos/redux-logo.png';
-import tailwindLogo from '../assets/logos/tailwind-logo.png';
-import gitLogo from '../assets/logos/git-logo.png';
-import cvdiego from '/cv-diego.pdf';
+import SkillRow from "./SkillRow";
+import me2 from "/img/me2.webp";
+import me3 from "/img/me3.webp";
+import nextLogo from "../assets/logos/nextjs.png";
+import reactLogo from "../assets/logos/react-logo.png";
+import TS from "../assets/logos/TS-logo.png";
+import liquidLogo from "../assets/logos/liquid-logo.png";
+import mongodbLogo from "../assets/logos/mongodb-logo.png";
+import djangoLogo from "../assets/logos/django.png";
+import reduxLogo from "../assets/logos/redux-logo.png";
+import pythonLogo from "../assets/logos/python.png";
+import tailwindLogo from "../assets/logos/tailwind-logo.png";
+import gitLogo from "../assets/logos/git-logo.png";
+import cvdiego from "/cv-diego.pdf";
 
 let skills = [
-  [htmlLogo, 'HTML', cssLogo, 'CSS'],
-  [jsLogo, 'JAVASCRIPT', reactLogo, 'REACT'],
-  [reduxLogo, 'REDUX', tailwindLogo, 'TAILWINDCSS'],
-  [routerLogo, 'REACT-ROUTER', nodeLogo, 'NODE.JS'],
-  [mongodbLogo, 'MONGODB', liquidLogo, 'LIQUID'],
-  [jestLogo, 'JEST/TESTING', gitLogo, 'GIT/GITHUB'],
+  [TS, "TypeScript", nextLogo, "Next.JS", 12314],
+  [pythonLogo, "Python", reactLogo, "REACT", 32341],
+  [djangoLogo, "Django", tailwindLogo, "TAILWINDCSS", 34313],
+  // [routerLogo, "REACT-ROUTER", nodeLogo, "NODE.JS", 87964],
+  [mongodbLogo, "MONGODB", liquidLogo, "LIQUID", 58584],
+  [reduxLogo, "REDUX", gitLogo, "GIT/GITHUB", 94921],
 ];
 
 export default function AboutMe() {
-  const skillId = useId();
   return (
     <section id="about" className="px-[1.4rem] min-[1024px]:px-[6rem] pb-16">
       <h2 className="text-secondary-900 heading-1">ABOUT ME</h2>
@@ -34,7 +30,7 @@ export default function AboutMe() {
         <div className="min-[728px]:flex-1">
           <img
             src={me2}
-            className="w-full max-w-full h-auto object-cover rounded-md max-h-[800px]"
+            className="w-full max-w-full h-auto object-cover rounded-md max-h-[85vh]"
             alt="An image about me"
           />
         </div>
@@ -70,17 +66,17 @@ export default function AboutMe() {
           />
         </div>
         <div id="skills" className="min-[728px]:flex-1 text-body-1 pt-6 ">
-          <h3 className="text-heading-3 text-black-body-font font-semibold mb-7 min-[1024px]:text-[4rem] min-[1536px]:text-[5rem] leading-[4.5rem] min-[1024px]:mb-10">
+          <h3 className="text-heading-3 text-black-body-font font-semibold mb-7 min-[1024px]:text-[4rem] min-[1536px]:text-[5rem] leading-[4.5rem] min-[1024px]:mb-16">
             My Skills
           </h3>
-          <div className="flex flex-col gap-[3.5rem] pb-10">
-            {skills.map((row, index) => (
+          <div className="flex flex-col gap-[3.5rem] pb-10 min-[1024px]:mb-12">
+            {skills.map((row) => (
               <SkillRow
-                key={`${skillId} - ${index}`}
                 logo1={row[0]}
                 logo2={row[2]}
                 name1={row[1]}
                 name2={row[3]}
+                key={row[4]}
               />
             ))}
           </div>
