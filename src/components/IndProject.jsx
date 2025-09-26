@@ -1,5 +1,5 @@
-import { useId } from 'react';
-import arrowRight from '../assets/logos/arrowRight.svg';
+import { useId } from "react";
+import arrowRight from "../assets/logos/arrowRight.svg";
 
 export default function IndProject({ proyectInfo }) {
   const techId = useId();
@@ -21,18 +21,20 @@ export default function IndProject({ proyectInfo }) {
             alt={`image of ${[proyectInfo[2]]}`}
           />
           <div className="flex justify-between text-secondary-800 pt-7 min-[1250px]:pt-10">
-            <a
-              href={proyectInfo[7]}
-              target="_blank"
-              className="z-10 flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
-            >
-              <img
-                src={arrowRight}
-                alt="icon of an arrow to the right"
-                className="w-6 min-[768px]:w-8 min-[1250px]:w-12"
-              />
-              <span>Code</span>
-            </a>
+            {proyectInfo[7] && (
+              <a
+                href={proyectInfo[7]}
+                target="_blank"
+                className="z-10 flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
+              >
+                <img
+                  src={arrowRight}
+                  alt="icon of an arrow to the right"
+                  className="w-6 min-[768px]:w-8 min-[1250px]:w-12"
+                />
+                <span>Code</span>
+              </a>
+            )}
             <a
               href={proyectInfo[8]}
               target="_blank"
@@ -45,18 +47,20 @@ export default function IndProject({ proyectInfo }) {
               />
               <span>Visit Project</span>
             </a>
-            <a
-              href={proyectInfo[9]}
-              target="_blank"
-              className="z-10 flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
-            >
-              <img
-                src={arrowRight}
-                alt="icon of an arrow to the right"
-                className="w-6 min-[768px]:w-8 min-[1250px]:w-12"
-              />
-              <span>Readme</span>
-            </a>
+            {proyectInfo[9] && (
+              <a
+                href={proyectInfo[9]}
+                target="_blank"
+                className="z-10 flex items-center text-body-2 min-[768px]:text-body-1 min-[1250px]:text-[1.7rem] min-[1370px]:text-[2.1rem]"
+              >
+                <img
+                  src={arrowRight}
+                  alt="icon of an arrow to the right"
+                  className="w-6 min-[768px]:w-8 min-[1250px]:w-12"
+                />
+                <span>Readme</span>
+              </a>
+            )}
           </div>
         </div>
 
@@ -82,7 +86,7 @@ export default function IndProject({ proyectInfo }) {
               {proyectInfo[4].map((p, idx) => (
                 <p
                   key={`${paragraphId} - ${idx}`}
-                  className="text-body-1 min-[1536px]:text-3xl"
+                  className="text-body-1 min-[1536px]:text-3xl min-[1200px]:mb-5"
                 >
                   {p}
                 </p>
@@ -101,7 +105,7 @@ export default function IndProject({ proyectInfo }) {
           </div>
           <span
             className={`${
-              proyectInfo[6] === '01.' && 'min-[1024px]:tracking-[0.08em]'
+              proyectInfo[6] === "01." && "min-[1024px]:tracking-[0.08em]"
             } bottom-[-10rem] z-[1] min-[1150px]:bottom-[-14rem] flex w-full justify-end max-[1023px]:hidden min-[1024px]:text-[208px] min-[1150px]:text-[256px] text-accent-100/20 font-bold absolute`}
           >
             {proyectInfo[6]}
