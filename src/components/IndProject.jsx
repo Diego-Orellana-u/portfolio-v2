@@ -1,10 +1,6 @@
-import { useId } from "react";
 import arrowRight from "../assets/logos/arrowRight.svg";
 
 export default function IndProject({ proyectInfo }) {
-  const techId = useId();
-  const paragraphId = useId();
-
   return (
     <div className="z-[10] min-[1024px]:border-y-[1px] min-[1024px]:border-primary-lines/30 min-[1024px]:pb-[5rem] min-[1024px]:pt-[5rem] min-[1150px]:pb-[8rem] min-[1150px]:pt-[7rem]">
       <div className="flex flex-col gap-y-7 pb-14 min-[1024px]:pb-0 px-[1.4rem] min-[1024px]:px-[6rem] min-[1024px]:flex-row">
@@ -66,12 +62,12 @@ export default function IndProject({ proyectInfo }) {
 
         <div className="text-white-body-font flex flex-col relative flex-1 min-[1024px]:grow-[1.3]">
           <div className="flex flex-wrap gap-4 pb-4 min-[1024px]:hidden ">
-            {proyectInfo[5].map((tech, idx) => (
+            {proyectInfo[5].map((tech) => (
               <div
-                key={`${techId} - ${idx}`}
+                key={tech[1]}
                 className="border border-white px-4 py-[0.25rem] rounded-3xl text-sm"
               >
-                <span>{tech} </span>
+                <span>{tech[0]}</span>
               </div>
             ))}
           </div>
@@ -83,22 +79,22 @@ export default function IndProject({ proyectInfo }) {
               {proyectInfo[3]}
             </span>
             <div className="flex flex-col gap-4 min-[768px]:gap-5">
-              {proyectInfo[4].map((p, idx) => (
+              {proyectInfo[4].map((p) => (
                 <p
-                  key={`${paragraphId} - ${idx}`}
+                  key={p[1]}
                   className="text-body-1 min-[1536px]:text-3xl min-[1200px]:mb-5"
                 >
-                  {p}
+                  {p[0]}
                 </p>
               ))}
             </div>
             <div className="pb-16 pt-5 max-[1023px]:hidden flex flex-wrap gap-4">
               {proyectInfo[5].map((tech, idx) => (
                 <div
-                  key={`${techId} - ${idx}`}
+                  key={tech[1]}
                   className="border border-white px-4 py-[0.25rem] rounded-3xl text-ml min-[1250px]:text-xl "
                 >
-                  <span>{tech} </span>
+                  <span>{tech[0]}</span>
                 </div>
               ))}
             </div>
